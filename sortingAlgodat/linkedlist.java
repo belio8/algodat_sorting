@@ -17,7 +17,9 @@ public class linkedlist {
     public node getHead() {
         return head;
     }
-
+    public void setHead(node newHead){
+        this.head = newHead;
+    }
     public int size() {
         int count = 0;
         node temp = head;
