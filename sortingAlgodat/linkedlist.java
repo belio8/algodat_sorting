@@ -14,27 +14,27 @@ public class linkedlist {
         }
     }
 
-            public node getHead() {
-            return head;
-        }
+        public node getHead() {
+        return head;
+    }
 
-        public int size() {
-            int count = 0;
-            node temp = head;
-            while (temp != null) {
-                count++;
-                temp = temp.next;
-            }
-            return count;
+    public int size() {
+        int count = 0;
+        node temp = head;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
         }
+        return count;
+    }
 
-        public void print() {
-            node temp = head;
-            while (temp != null) {
-                System.out.print(temp.data + " ");
-                temp = temp.next;
-            }
-            System.out.println();
+    public void print() {
+        node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
         }
+        System.out.println();
+    }
 }
 
