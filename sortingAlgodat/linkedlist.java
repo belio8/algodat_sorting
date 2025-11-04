@@ -28,5 +28,16 @@ public class linkedlist {
         return count;
     }
 
+    public void printList() {
+        
+        node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+
+        System.out.println();
+    }
+
 }
 
