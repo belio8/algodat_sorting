@@ -14,7 +14,7 @@ public class linkedlist {
         }
     }
 
-        public node getHead() {
+    public node getHead() {
         return head;
     }
 
@@ -26,6 +26,17 @@ public class linkedlist {
             temp = temp.next;
         }
         return count;
+    }
+
+    public void printList() {
+        
+        node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+
+        System.out.println();
     }
 
 }
