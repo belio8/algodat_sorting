@@ -1,35 +1,22 @@
 public class bubblesort {
-       // Method untuk melakukan bubble sort
-    public void bubbleSort(int[] arr) {
-        int n = arr.length;
-        boolean swapped;
+    node head;
+    public void bubbleSort() {
+    if (head == null || head.next == null) return;
 
-        // Looping untuk setiap elemen
-        for (int i = 0; i < n - 1; i++) {
-            swapped = false;
-
-            // Bandingkan elemen berurutan
-            for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    // Tukar posisi jika salah urut
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    swapped = true;
-                }
+    boolean swapped;
+    do {
+        swapped = false;
+        node current = head;
+        while (current.next != null) {
+            if (current.data > current.next.data) {
+                int temp = current.data;
+                current.data = current.next.data;
+                current.next.data = temp;
+                swapped = true;
             }
-
-            // Jika tidak ada pertukaran, array sudah terurut
-            if (!swapped) break;
+            current = current.next;
         }
+    } while (swapped);
     }
-
-    // Method untuk menampilkan array
-    public void printArray(int[] arr) {
-        for (int value : arr) {
-            System.out.print(value + " ");
-        }
-        System.out.println();
-    }
-
 }
+
