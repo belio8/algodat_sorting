@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class bubblesort {
     node head;
     public void bubbleSort() {
@@ -19,8 +18,5 @@ public class bubblesort {
         }
     } while (swapped);
     }
-=======
-public class bubblesort {    
->>>>>>> e2fb95fb89883e190156ad62a91ce3af69c9b7da
 }
 
