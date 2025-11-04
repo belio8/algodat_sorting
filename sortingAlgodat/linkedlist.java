@@ -14,7 +14,7 @@ public class linkedlist {
         }
     }
 
-        public node getHead() {
+    public node getHead() {
         return head;
     }
 

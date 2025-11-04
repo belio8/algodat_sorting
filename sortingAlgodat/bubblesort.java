@@ -1,6 +1,5 @@
 public class bubblesort {
-    node head;
-    public void bubbleSort() {
+    public void bubbleSort(node head) {
         if (head == null || head.next == null) return;
 
         boolean swapped;

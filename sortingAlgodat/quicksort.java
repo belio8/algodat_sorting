@@ -1,6 +1,5 @@
 public class quicksort {
 
-    // Fungsi utama untuk Quick Sort
     public node quickSort(node head) {
 
         if (head == null || head.next == null)
@@ -53,7 +52,6 @@ public class quicksort {
         } else {
             head = pivot;
         }
-
         pivot.next = right;
         return head;
     }
