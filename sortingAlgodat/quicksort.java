@@ -2,7 +2,7 @@ public class quicksort {
 
     // Fungsi utama untuk Quick Sort
     public node quickSort(node head) {
-        
+
         if (head == null || head.next == null)
             return head;
 
@@ -56,14 +56,5 @@ public class quicksort {
 
         pivot.next = right;
         return head;
-    }
-
-    public void printList(node head) {
-        node temp = head;
-        while (temp != null) {
-            System.out.print(temp.data + " ");
-            temp = temp.next;
-        }
-        System.out.println();
     }
 }
