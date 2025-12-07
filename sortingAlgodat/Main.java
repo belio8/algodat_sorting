@@ -40,6 +40,8 @@ public class Main {
         bubblesort bubbleMenengah = new bubblesort();
         quicksort quickMenengah = new quicksort();
 
+        originalList1.printList();
+
         startTime = System.nanoTime();
         bubbleMenengah.bubbleSort(list_menengahBubble.getHead());
         endTime = System.nanoTime();
@@ -66,5 +68,7 @@ public class Main {
         endTime = System.nanoTime();
         duration = (endTime - startTime);
         System.out.println("Quick Sort      : " + (duration / 1000000.0)+ "ms (" + list_besarQuick.size() + " data)");
+
+        list_kecilQuick.printList();
     }
 }
